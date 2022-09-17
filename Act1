@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1>Activity 1</h1>
+	<h2>Odd or Even</h2>
+	
+	<p id = "out"></p>
+	
+	<script>
+		let number = 5;
+		let out;
+		
+		if (number % 2 == 0){
+			out = "Even";}
+		else{
+			out = "Odd";}
+		
+		document.getElementById("out").innerHTML = number +" is "+out;
+		
+	</script>
+</body>
+</html>
