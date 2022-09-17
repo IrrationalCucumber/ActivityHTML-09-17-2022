@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Activity 2</h1>
+		<h2>Zodiac Sign<h2>
+		
+        <p id="out"></p>
+
+        <script>
+            let myMonth ="February"
+            let myDay = 28;
+            let myBirthmyDay = myMonth +" "+myDay;
+            let out;            
+        
+            if ((myMonth == "December"  && myDay >=22) || (myMonth == "January" && myDay <=19))
+            {
+                zodiac = "Capricornus";
+            }
+            else if ((myMonth == "January" && myDay >=20) || (myMonth == "February" && myDay <18))
+            {
+                zodiac = "Aquarius";
+            }
+            else if ((myMonth == "February" && myDay >=19) || (myMonth == "March" && myDay <=20))
+            {
+                zodiac = "Pisces";
+            }
+            else if ((myMonth == "March" && myDay >=21) || (myMonth == "April" && myDay <=19))
+            {
+                zodiac = "Aries";
+            }
+            else if ((myMonth == "April" && myDay >=20) || (myMonth == "May" && myDay <=20))
+            {
+                zodiac = "Taurus";
+            }
+            else if ((myMonth == "May" && myDay >=21) || (myMonth == "June" && myDay <=21))
+            {
+                zodiac = "Gemini";
+            }
+            else if ((myMonth == "June" && myDay >=22) || (myMonth == "July" && myDay <=22))
+            {
+                zodiac = "Cancer";
+            }
+            else if ((myMonth == "July" && myDay >=23) || (myMonth == "August" && myDay <=22))
+            {
+                zodiac = "Leo";
+            }
+            else if ((myMonth == "August" && myDay >=23) || (myMonth == "September" && myDay <=22))
+            {
+                zodiac = "Virgo";
+            }
+            else if ((myMonth == "September" && myDay >=23) || (myMonth == "October" && myDay <=23))
+            {
+                zodiac = "Libra";
+            }
+            else if ((myMonth == "October" && myDay >=24) || (myMonth == "November" && myDay <=21))
+            {
+                zodiac = "Scorpius";
+            }
+            else if ((myMonth == "November" && myDay >=22) || (myMonth == "December" && myDay <=21))
+            {
+                zodiac = "Sagittarius";
+            }
+            else if ((myMonth == "December" && myDay >=22) || (myMonth == "January 1" && myDay <=19))
+            {
+                zodiac = "Capricornus";
+            }
+            else{
+                zodiac = "Invalid Date";
+            }
+            
+			
+			document.getElementById("out").innerHTML = "Your zodiac sign is "+ zodiac;
+        </script>
+    </body>
+</html>
